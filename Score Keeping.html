@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title> Score Keeping Page</title>
+<head>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h2>Score Keeping Table</h2>
+
+
+<table style="width:100%">
+  <tr>
+    <th>Home</th>
+    <th>Guest</th> 
+  <tr>
+    <td><button onclick="changeScore('home', -1)">Lost one point</button></td>
+    <td><button onclick="changeScore('guest', -1)">Lost one point</button></td>
+  </tr>
+  <tr>
+    <td><button onclick="changeScore('home', 1)">Won one point</button></td>
+    <td><button onclick="changeScore('guest', 1)">Won one point</button></td>
+  </tr>
+  <tr>
+    <td id="homeScore">0</td>
+    <td id="guestScore">0</td>
+  </tr>
+</table>
+
+<script>
+  let homeScore = 0;
+  let guestScore = 0;
+  
+  function changeScore(team, points) {
+    if (team === 'home') {
+      homeScore += points;
+      document.getElementById('homeScore').textContent = homeScore;
+    } else if (team === 'guest') {
+      guestScore += points;
+      document.getElementById('guestScore').textContent = guestScore;
+    }
+  }
+</script>
+
+</body>
+</html>
