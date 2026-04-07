@@ -5,10 +5,11 @@
 
 <style>
 table, th, td {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
 }
 </style>
 </head>
+<link rel="stylesheet" href="scorestyle.css">
 <body>
 
 <h2>Score Keeping Table</h2>
@@ -21,6 +22,7 @@ table, th, td {
   <tr>
     <td><button onclick="changeScore('home', -1)">Lost one point</button></td>
     <td><button onclick="changeScore('guest', -1)">Lost one point</button></td>
+    <input type="button" onclick="clearScores()" value="Set completed">
   </tr>
   <tr>
     <td><button onclick="changeScore('home', 1)">Won one point</button></td>
@@ -44,8 +46,19 @@ table, th, td {
       guestScore += points;
       document.getElementById('guestScore').textContent = guestScore;
     }
-  }
+    }
+    
+    function clearScores() {
+        homeScore = 0;
+        guestScore = 0;
+        document.getElementById('homeScore').textContent = homeScore;
+        document.getElementById('guestScore').textContent = guestScore;
+    
+    alert('Score cleared');
+    }
 </script>
 
+<p>A link styled as a button:</p>
+<a href="homepage.html" target="_blank">Homepage link</a>
 </body>
 </html>
