@@ -47,13 +47,26 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: red;
+  background-color: rgb(98, 186, 218);
+  padding: 8px 16px
 }
 </style>
 </head>
 <link rel="stylesheet" href="tournamentstyle.css">
-
-<p>A link styled as a button:</p>
 <a href="homepage.html" target="_blank">Homepage link</a>
+<a href="Top Clubs.html" class="previous">&laquo; Previous</a>
+<a href="Score Keeping.html" class="next">Next &raquo;</a>
+<h6> <h6>Toggle Dark/Light Mode</h6> 
+<h6>Click the button to toggle between dark and light mode for this page.</h6>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
 </html>
 

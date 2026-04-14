@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+<div>
 <Title> Table Tennis Page!</Title>
 <style>
     h1   {
-        color: rgb(25, 65, 120); /* Overrides the default text color for H1 elements */
+        color: rgb(77, 117, 173); /* Overrides the default text color for H1 elements */
          }
     h2    {
-        color: rgba(0, 38, 255, 0.596); /* Overrides the default text color for H1 elements */
+        color: rgba(13, 24, 92, 0.596); /* Overrides the default text color for H1 elements */
     }
     h6    {
-        color: rgb(11, 62, 245); /* Overrides the default text color for H1 elements */
+        color: rgb(73, 101, 163); /* Overrides the default text color for H1 elements */
          }
     </style>
 <head>
      <link rel="stylesheet" href="homepagestyles.css">
-        <div class="topnav">
-        <a href="homepage.html">Home</a>
-        <a href="Tournament Page.html">Tournaments</a>
-        <a href="Tips for TT.html">Tips for Table Tennis</a>
-        <a href="Top Clubs.html">Top clubs</a>
-        <a href="Basic Rules of Table Tennis.html">Basic Rules of Table Tennis</a>
-    </div>
+        <div class ="topnav">
+        <nav id="topnav">
+            <a href="homepage.html">Home</a>
+            <a href="Basic Rules of Table Tennis.html">Basic Rules of Table Tennis</a>
+            <a href="Tips for TT.html">Tips for Table Tennis</a>
+            <a href="Top Clubs.html">Top clubs</a>
+            <a href="Tournament Page.html">Tournament</a>
+            <a href="Score Keeping.html">Score Keeper</a>
+        </div>
     <h1> Welcome to a page about Table Tennis!  </h1>
     <h2> I am Yaalini Kathiravan! </h5>
-    <p> This website contains basic information about Table Tennis, and important information about the sport and important players from the sport for someone to change table tennis from a hobby to professional. My website will be cool because it is easy to use and will convey interesting information about a less known sport. <mark style="background-color: rgb(172, 213, 231);"> Also, as I am a professional table tennis player, the user will get valuable and reliable tips to improve. Additionally, I can provide information about tournaments allowing them to take their level to competition. </mark> Also I will also provide information about top clubs in the USA for the user to join ad train.
-</p>
+    <h5> This website contains basic information about Table Tennis, and important information about the sport and important players from the sport for someone to change table tennis from a hobby to professional. My website will be cool because it is easy to use and will convey interesting information about a less known sport. <mark style="background-color: rgb(172, 213, 231);"> Also, as I am a professional table tennis player, you will get valuable and reliable tips to improve. Additionally, I can provide information about tournaments allowing them to take their level to competition. </mark> Also I will also provide information about top clubs in the USA for the user to join and train.
+    </h5>
 </head>
 <body>
     <h3> <mark style="background-color: rgb(166, 217, 217);">Table Tennis is the same as ping pong, but it is the olympic sport! </mark></h2>
@@ -32,16 +35,41 @@
     <h5>I play at <mark style="background-color: rgb(7, 179, 202);">Socal Table Tennis club.</mark></h2>
     <h6> Want to know more about my club? </h2>
     <h5> Here: </h5>
-        <a href="https://www.socal-tabletennis.com/">This is the Socal Table Tennis club's official link.</a>
-<p>Basic rules of Table Tennis:</p>
-<a href="Basic Rules of Table Tennis.html"><img src="Table_Tennis-28.07.24-_DP97682.jpg" alt="Table Tennis Player" style="width:200px;height:128px;"></a>
-<p>Top Clubs in USA Page:</p>
-<a href="Top Clubs.html"><img src="DSC00492.avif" alt="Table Tennis Player" style= display"width:200px;height:128px;"></a>
-<p>Tips for Table Tennis:</p>
+        <a href="https://www.socal-tabletennis.com/">This is the Socal Table Tennis club's official link.</a> <br>
+<h6> Subpage links</h6>
+<div display = "inline">
+<a href="Basic Rules of Table Tennis.html"><img src="Table_Tennis-28.07.24-_DP97682.jpg" alt="Table Tennis Player" style="width:200px;height:128px;"  ></a>
+
+<a href="Top Clubs.html"><img src="DSC00492.avif" alt="Table Tennis Player" style= "width:200px;height:128px;"></a>
+
 <a href="Tips for TT.html"><img src="unnamed.png" alt="Table Tennis Player" style="width:200px;height:128px;"></a>
-<p>Common/Top Table Tennis Tournaments:</p>
+
 <a href="Tournament Page.html"><img src="DF89F61B-7060-4337-89E0-DB227AA4B4FA-1-1024x462.jpeg" alt="Table Tennis Player" style="width:200px;height:128px;"></a>
-<p>Score Keeping:</p>
+
 <a href="Score Keeping.html"><img src="download.jpeg" alt="Score" style="width:200px;height:128px;"></a>
+</div display = "inline">
+<h6> <h6>Toggle Dark/Light Mode</h6> 
+<h6>Click the button to toggle between dark and light mode for this page.</h6>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("topnav").style.top = "0";
+  } else {
+    document.getElementById("topnav").style.top = "-150px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 </body>
 </html>

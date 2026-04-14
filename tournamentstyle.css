@@ -4,3 +4,7 @@ body {
     padding: 40px;
     color: #482d38;
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}

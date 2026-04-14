@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <Title> Basic Rules of Table Tennis Page!</Title>
+ <div class ="topnav">
+        <nav id="topnav">
+            <a href="homepage.html">Home</a>
+            <a href="Basic Rules of Table Tennis.html">Basic Rules of Table Tennis</a>
+            <a href="Tips for TT.html">Tips for Table Tennis</a>
+            <a href="Top Clubs.html">Top clubs</a>
+            <a href="Tournament Page.html">Tournament</a>
+            <a href="Score Keeping.html">Score Keeper</a>
+  </div>
 <h1> Basic Rules of Table Tennis Page! </h1>
 <p> 
 Rules of table tennis, equipment, and rating information. Additionally, information on various styles of playing.
@@ -27,12 +36,24 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: red;
+  background-color: rgb(87, 101, 194);
+  padding: 8px 16px
 }
 </style>
 </head>
 <link rel="stylesheet" href="rulesstyle.css">
-<p>A link styled as a button:</p>
 <a href="homepage.html" target="_blank">Homepage link</a>
-</html>
+<a href="Tips for TT.html".html" class="next">Next &raquo;</a>
+<h6> <h6>Toggle Dark/Light Mode</h6> 
+<h6>Click the button to toggle between dark and light mode for this page.</h6>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
+</html>

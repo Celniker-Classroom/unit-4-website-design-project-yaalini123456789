@@ -31,17 +31,30 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: red;
+  background-color: rgb(55, 168, 197);
+  padding: 8px 16px
 }
 </style>
 </head>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="tipsstyle.css">
 <body>
 
-
-
-<p>A link styled as a button:</p>
+<br>
 <a href="homepage.html" target="_blank">Homepage link</a>
 </head>
+<a href="Basic Rules of Table Tennis.html" class="previous">&laquo; Previous</a>
+<a href="Top Clubs.html" class="next">Next &raquo;</a>
+<h6> <h6>Toggle Dark/Light Mode</h6> 
+<h6>Click the button to toggle between dark and light mode for this page.</h6>
+
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
+</html>
 </html>

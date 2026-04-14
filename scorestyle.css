@@ -1,6 +1,29 @@
 body {
     font-family: 'Short Stack', cursive;
-    background-color: #a0ebe2;
+    background-color: #c3ece8;
     padding: 40px;
     color: #482d38;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #602a2a;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.round {
+  border-radius: 50%;
+}
+  
+.dark-mode {
+  background-color: black;
+  color: white;
 }

@@ -1,6 +1,6 @@
 body {
     font-family: 'Short Stack', cursive;
-    background-color: #c8e6f5; /* Soft Pink background */
+    background-color: #8dced2;
     padding: 40px;
     color: #482d38;
 }
@@ -11,12 +11,12 @@ a {
 }
 
 a:hover {
-  background-color: rgb(71, 166, 200);
+  background-color: #75b9c7;
   color: black;
 }
 
 .previous {
-  background-color: #f1f1f1;
+  background-color: #527eae;
   color: black;
 }
 
@@ -27,4 +27,8 @@ a:hover {
 
 .round {
   border-radius: 50%;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
 }
