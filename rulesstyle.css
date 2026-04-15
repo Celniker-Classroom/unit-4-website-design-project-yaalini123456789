@@ -33,31 +33,3 @@ a:hover {
   color: white;
 }
 
-#topnav { 
-  background-color: #2b7496;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: top 0.3s;
-  z-index: 1000;
-}
-
-.topnav a { 
-  float: left; 
-  color: #ffffff; 
-  text-align: center; 
-  font-size: 17px; 
-  width: 16.66666666667%; 
-  padding-bottom:15px; 
-  padding-top: 15px; 
-}  
-
-.topnav a:hover { 
-  background-color: #001aff; 
-  color: rgb(221, 47, 3); } 
-.topnav a.active { 
-  background-color: #ffffff; 
-  color: rgb(255, 232, 22); 
-} 
