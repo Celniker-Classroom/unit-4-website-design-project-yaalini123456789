@@ -1,3 +1,13 @@
+h1 {
+  text-align: center;
+  background-color: #bae8f7;
+  padding: 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #16bfe9;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
 body {
     font-family: 'Short Stack', cursive;
     background-color: hsl(209, 81%, 80%);
